@@ -12,10 +12,10 @@ Every day in different programming language
 9. Ruby
 10. PHP
 11. JS (Node.js)
+12. D
 
 Planned for next days [
 Pascal
-D
 Scala
 Dart
 BASIC
