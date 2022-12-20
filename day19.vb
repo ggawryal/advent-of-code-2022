@@ -89,8 +89,6 @@ Module Program
                     state.clayRobots = 0
                 End If
 
-                state.obsidian = Math.Min(state.obsidian, (iters - state.time + 1) * Math.Max(0, _costs.geodeRobotObsidianCost - state.obsidianRobots))
-                state.clay = Math.Min(state.clay, Math.Max(0, iters - state.time - 1) * Math.Max(0, _costs.obsidianRobotClayCost - state.clayRobots))
                 resLowerBound = Math.Max(resLowerBound, state.geode + state.geodeRobots * (iters - state.time + 1))
                 Dim resUpperBound = state.geode + state.geodeRobots * (iters - state.time + 1) + (iters - state.time) * (iters - state.time + 1) \ 2
                 If resUpperBound <= resLowerBound Then
